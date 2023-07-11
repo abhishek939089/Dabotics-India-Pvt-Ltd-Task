@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        Scientific Calculator
+    </div>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="result" readonly>
+        </div>
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteDigit()">DEL</button>
+            <button onclick="appendDigit('7')">7</button>
+            <button onclick="appendDigit('8')">8</button>
+            <button onclick="appendDigit('9')">9</button>
+            <button onclick="appendOperator('+')">+</button>
+            <button onclick="appendDigit('4')">4</button>
+            <button onclick="appendDigit('5')">5</button>
+            <button onclick="appendDigit('6')">6</button>
+            <button onclick="appendOperator('-')">-</button>
+            <button onclick="appendDigit('1')">1</button>
+            <button onclick="appendDigit('2')">2</button>
+            <button onclick="appendDigit('3')">3</button>
+            <button onclick="appendOperator('*')">*</button>
+            <button onclick="appendDigit('0')">0</button>
+            <button onclick="appendOperator('.')">.</button>
+            <button onclick="appendOperator('/')">/</button>
+            <button onclick="appendValue('(')">(</button>
+            <button onclick="appendValue(')')">)</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="appendScientificFunction('sqrt')">√</button>
+            <button onclick="appendScientificFunction('exp')">Exp</button>
+            <button onclick="appendScientificFunction('sin')">Sin</button>
+            <button onclick="appendScientificFunction('cos')">Cos</button>
+            <button onclick="appendScientificFunction('tan')">Tan</button>
+            <button onclick="appendScientificFunction('log')">Log</button>
+            <button onclick="appendValue('°')">°</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
